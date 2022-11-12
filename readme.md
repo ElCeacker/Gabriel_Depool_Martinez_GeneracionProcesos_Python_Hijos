@@ -1,0 +1,4 @@
+importo "os" y "time"
+y hago un metodo el cual va a ser el proceso padre y le pido desde aquí que introduzca cuántos procesos hijos quiere generar, hago un bucle en el que va a generar tantos procesos hijos como el número que yo introduzca, dentro de este generamos un nuevo PID que será el del hijo, esto hará que cada vez que cree un hijo tendrán PIDs diferentes y pongo un acondición en la que digo (Si el nuevo PID es = 0 que me ejecute el método hijo).
+El método hijo lo creamos y decimos que nos miuestre el PID de este y con un texto que pone "Creado" para estar seguros de que son PIDs diferentes, utilizo el método sleep de la clase time para que esperé los segundos que yo le ponga que en este caso son 5 y que luego de estos 5 segundos me muestre que los PIDs han muerto.
+por último utilizo el método "_exit(0)" de la clase os para cerrarlo.
